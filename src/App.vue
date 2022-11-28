@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <navbarCmp></navbarCmp>
+    <breadcrumbCmp></breadcrumbCmp>
+    <galeryCmp></galeryCmp>
+    <sliderCmp></sliderCmp>
+    <footerCmp></footerCmp>
+    <CopyrightCmp></CopyrightCmp>
+
   </div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import navbarCmp from "./components/navbarCmp.vue";
+import breadcrumbCmp from "./components/breadcrumbCmp.vue";
+import galeryCmp from "./components/galeryCmp.vue";
+import sliderCmp from "./components/sliderCmp.vue";
+import footerCmp from "./components/footerCmp.vue";
+import CopyrightCmp from "./components/copyrightCmp.vue";
+
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    navbarCmp,
+    breadcrumbCmp,
+    galeryCmp,
+    sliderCmp,
+    footerCmp,
+    CopyrightCmp
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
